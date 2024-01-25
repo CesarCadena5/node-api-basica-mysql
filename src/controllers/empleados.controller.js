@@ -30,6 +30,7 @@ export const crearEmpleado = async (req, res, next) => {
         };
 
     } catch (error) {
+        console.log(error);
         return res.status(500).json({
             errores: 'Ocurrió un error al guardar el empleado',
             ok: false
